@@ -8,25 +8,37 @@ from sklearn.model_selection import train_test_split
 # data modelling
 from sklearn.neighbors import KNeighborsClassifier
 
+import warnings
+warnings.filterwarnings("ignore")
 
-def heart_attack_prediction(user_data):
+import pickle
 
-    data = pd.read_csv('heart.csv')
+data = pd.read_csv('heart.csv')
 
-    #Model Preparation 
+#Model Preparation 
 
-    y = data["target"]
-    X = data.drop('target',axis=1)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state = 0)
+y = data["target"]
+X = data.drop('target',axis=1)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state = 0)
+
+
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+knn = KNeighborsClassifier(n_neighbors=10)
+knn.fit(X_train, y_train)
+
+#test_data = np.array(user_data)
+#test_data = test_data.reshape((1,-1))
+
+pickle.dump(knn,open('model.pkl','wb'))
+model=pickle.load(open('model.pkl','rb'))
+
+
+def training_scaler(X_train=X_train):
 
     scaler = StandardScaler()
     X_train = scaler.fit_transform(X_train)
-    X_test = scaler.transform(X_test)
 
-    knn = KNeighborsClassifier(n_neighbors=10)
-    knn.fit(X_train, y_train)
-    
-    test_data = np.array(user_data)
-    test_data = test_data.reshape((1,-1))
-
-    return knn.predict(X_test)
+    return scaler
