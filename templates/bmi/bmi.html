@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+    <head class="header">
+        <title>BMI Calculator</title>
+    </head>
+<body>
+<div id="box">
+    <div id="content">
+        <div class="inp_box">
+            <p>Weight: </p><input
+                type="number"
+                value="60"
+                id="weight_inp"
+                placeholder="Weight in Kg ..."
+        />
+            <span>kg</span>
+        </div>
+        <div class="inp_box">
+            <p>Height: </p>
+            <input
+                    type="number"
+                    value="157"
+                    id="height_inp"
+                    placeholder="Height in cm ..."
+            />
+            <span>cm</span>
+        </div>
+        <div id="out_box">
+            <input type="range" id="bmi_range" min="0" max="450" disabled/>
+            <div id="scale"></div>
+            <div id="bmi_result">BMI : 30.8</div>
+            <div id="bmi_status">underweight</div>
+        </div>
+    </div>
+
+    </a>
+</div>
+</div>
+</html>
