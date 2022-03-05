@@ -1,0 +1,140 @@
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+.nav {
+    height: 70px;
+    width: 95%;
+    margin: 0 auto;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+}
+/* Split Left */
+.split-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+.menu {
+    margin-left: 2rem;
+}
+.menu-link {
+    text-decoration: none;
+    color: rgba(0,0,0,0.40);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+}
+.menu-link.active {
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+.menu-link.active::after {
+    content: "";
+    height: 3px;
+    width: 20px;
+    border-radius: 20px;
+    background: #333;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+.menu-link:hover {
+    color: #333;
+}
+.nav .split-left h1 {
+    color: #333;
+    font-size: 18px;
+    position: relative;
+}
+.nav .split-left h1::after {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background: #333;
+    position: absolute;
+    bottom: 3px;
+    right: -7px;
+}
+
+/* Split Right */
+.split-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+.split-right button {
+    height: 40px;
+    width: 100px;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.split-right button:first-child {
+    background: #fff;
+    color: #000;
+}
+
+/* MAIN */
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-inner .left-pane,
+.wrapper-inner .right-pane {
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.wrapper-inner .right-pane {
+    background: tomato;
+}
+.wrapper-inner .left-pane {
+    padding-left: 3rem;
+}
+.wrapper-inner .left-pane h1 {
+    width: 80%;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}

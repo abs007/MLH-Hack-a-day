@@ -1,6 +1,6 @@
 import pickle
 import numpy as np
-from predictor import scaler
+from templates.model.predictor import scaler
 
 model = pickle.load(open('model.pkl','rb'))
 
