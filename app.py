@@ -13,5 +13,5 @@ def predict():
     
     user_data_scaled = scaler.transform(user_data)
 
-    prediction = model.predict_(user_data_scaled)
+    prediction = model.predict(user_data_scaled)
     print (prediction)
