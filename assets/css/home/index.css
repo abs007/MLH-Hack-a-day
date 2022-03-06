@@ -3,10 +3,11 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("../../images/background-image.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #fff;
+    /* background-image: url("../../images/background-image.png"); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     font-size: 16px;
     font-family: "Poppins", "Open Sans", sans-serif;
 }
@@ -128,18 +129,12 @@ main {
     justify-content: center;
     align-items: flex-start;
 }
-<<<<<<< HEAD
 .wrapper-inner .right-pane {
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
-=======
-
-
-
->>>>>>> e31b3117bf180afae9bae8586d9799242b9f3264
 .wrapper-inner .left-pane {
     padding-left: 3rem;
 }
@@ -155,7 +150,7 @@ main {
     font-family: "Poppins", "Open Sans", sans-serif;
 }
 .wrapper-inner .left-pane p {
-    width: 70%;
+    width: 85%;
     color: #555;
     margin: 2rem 0;
     font-size: 1rem;
