@@ -5,7 +5,7 @@ body {
     padding: 0;
     background: #fff;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", "Open Sans", sans-serif;
 }
 .nav {
     height: 70px;
@@ -89,16 +89,16 @@ body {
     width: 100px;
     background: transparent;
     border-radius: 5px;
-    color: #fff;
+    color: tomato;
     margin-right: 10px;
-    border: 2px solid #fff;
+    border: 2px solid tomato;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
 }
 .split-right button:first-child {
-    background: #fff;
-    color: #000;
+    background: tomato;
+    color: #fff;
 }
 
 /* MAIN */
@@ -127,14 +127,62 @@ main {
     align-items: flex-start;
 }
 .wrapper-inner .right-pane {
-    background: tomato;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 .wrapper-inner .left-pane {
     padding-left: 3rem;
 }
 .wrapper-inner .left-pane h1 {
-    width: 80%;
-    font-size: 3rem;
+    width: 90%;
+    margin: 0;
+    color: #333;
+    border-left: 5px solid tomato;
+    padding-left: 1rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Poppins", "Open Sans", sans-serif;
+}
+.wrapper-inner .left-pane p {
+    width: 70%;
+    color: #555;
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8;
+    font-family: "Poppins", "Open Sans", sans-serif;
+}
+.wrapper-inner .left-pane div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.wrapper-inner .left-pane div a,
+.wrapper-inner .left-pane div button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background: tomato;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 14px;
     font-weight: 600;
-    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.wrapper-inner .left-pane div a:last-child {
+    border: 2px solid tomato;
+    background: transparent;
+    color: tomato;
+}
+.wrapper-inner .right-pane img {
+    height: auto;
+    max-width: 90%;
 }
