@@ -3,7 +3,10 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #fff;
+    background-image: url("../../images/background-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
 }
@@ -114,20 +117,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .wrapper-inner .left-pane,
 .wrapper-inner .right-pane {
     height: 100%;
     width: 50%;
-    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.wrapper-inner .right-pane {
-    background: tomato;
-}
+
+
 
 .wrapper-inner .left-pane {
     padding-left: 3rem;
