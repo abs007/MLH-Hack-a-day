@@ -364,3 +364,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+body {
+background-image:url("../../images/background-image.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
