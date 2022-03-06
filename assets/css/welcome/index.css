@@ -127,6 +127,7 @@ main {
 }
 .wrapper-inner .right-pane {
     background: tomato;
+    text-align: center;
 }
 
 .wrapper-inner .left-pane {
@@ -137,4 +138,30 @@ main {
     font-size: 3rem;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 7%;
+  height: 7%;
+  border-radius: 50%;
+}
+
+.input-label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+.input {
+  display: inline-block;
+  float: left;
+}
+input[type='radio']{
+    margin:0;
+}
+
+input[type='radio'], label{
+   display:inline;
+   vertical-align:top;
 }
