@@ -3,9 +3,13 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #fff;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
+    background-image: url("../../images/background-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #514f16;
 }
 .nav {
     height: 70px;
@@ -88,7 +92,7 @@ body {
     width: 100px;
     background: transparent;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
     margin-right: 10px;
     border: 2px solid #fff;
     font-size: 15px;
@@ -97,7 +101,7 @@ body {
 }
 .split-right button:first-child {
     background: #fff;
-    color: #000;
+    color: #fff;
 }
 
 /* MAIN */
@@ -119,14 +123,12 @@ main {
 .wrapper-inner .right-pane {
     height: 100%;
     width: 50%;
-    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 .wrapper-inner .right-pane {
-    background: tomato;
     text-align: center;
 }
 
@@ -165,3 +167,34 @@ input[type='radio'], label{
    display:inline;
    vertical-align:top;
 }
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    padding: 20px;
+  }
