@@ -1,13 +1,13 @@
 import pickle
 import numpy as np
-from templates.model.predictor import scaler
+from predictor import scaler
 
 model = pickle.load(open('model.pkl','rb'))
 
 
-def predict():
-
-    int_features=[int(x) for x in request.form.values()]
+def predict(*args):
+    #int_features= args
+    int_features=[int(x) for x in args]
 
     user_data = np.array(int_features).reshape((1,-1))
     
@@ -15,3 +15,4 @@ def predict():
 
     prediction = model.predict(user_data_scaled)
     print (prediction)
+

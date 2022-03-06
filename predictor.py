@@ -13,21 +13,22 @@ warnings.filterwarnings("ignore")
 
 import pickle
 
+
 data = pd.read_csv('heart.csv')
 
 #Model Preparation 
 
-y = data["target"]
+Y_train = data["target"]
 X = data.drop('target',axis=1)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state = 0)
+#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state = 0)
 
 
 scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
+X_train = scaler.fit_transform(X)
+#X_test = scaler.transform(X_test)
 
 knn = KNeighborsClassifier(n_neighbors=10)
-knn.fit(X_train, y_train)
+knn.fit(X_train, Y_train)
 
 #test_data = np.array(user_data)
 #test_data = test_data.reshape((1,-1))
