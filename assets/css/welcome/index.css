@@ -3,12 +3,13 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
     background-image: url("../../images/background-image.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 16px;
-    font-family: "Poppins", "Open Sans", sans-serif;
+    color: #514f16;
 }
 .nav {
     height: 70px;
@@ -91,15 +92,15 @@ body {
     width: 100px;
     background: transparent;
     border-radius: 5px;
-    color: tomato;
+    color: #000;
     margin-right: 10px;
-    border: 2px solid tomato;
+    border: 2px solid #fff;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
 }
 .split-right button:first-child {
-    background: tomato;
+    background: #fff;
     color: #fff;
 }
 
@@ -117,7 +118,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .wrapper-inner .left-pane,
 .wrapper-inner .right-pane {
@@ -128,69 +128,73 @@ main {
     justify-content: center;
     align-items: flex-start;
 }
-<<<<<<< HEAD
 .wrapper-inner .right-pane {
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    text-align: center;
 }
-=======
 
-
-
->>>>>>> e31b3117bf180afae9bae8586d9799242b9f3264
 .wrapper-inner .left-pane {
     padding-left: 3rem;
 }
 .wrapper-inner .left-pane h1 {
-    width: 90%;
-    margin: 0;
-    color: #333;
-    border-left: 5px solid tomato;
-    padding-left: 1rem;
-    font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 1.2;
-    font-family: "Poppins", "Open Sans", sans-serif;
-}
-.wrapper-inner .left-pane p {
-    width: 70%;
-    color: #555;
-    margin: 2rem 0;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.8;
-    font-family: "Poppins", "Open Sans", sans-serif;
-}
-.wrapper-inner .left-pane div {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.wrapper-inner .left-pane div a,
-.wrapper-inner .left-pane div button {
-    height: 40px;
-    width: 150px;
-    border: none;
-    background: tomato;
-    color: #fff;
-    margin-right: 10px;
-    font-size: 14px;
+    width: 80%;
+    font-size: 3rem;
     font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 7%;
+  height: 7%;
+  border-radius: 50%;
+}
+
+.input-label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+.input {
+  display: inline-block;
+  float: left;
+}
+input[type='radio']{
+    margin:0;
+}
+
+input[type='radio'], label{
+   display:inline;
+   vertical-align:top;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-.wrapper-inner .left-pane div a:last-child {
-    border: 2px solid tomato;
-    background: transparent;
-    color: tomato;
-}
-.wrapper-inner .right-pane img {
-    height: auto;
-    max-width: 90%;
-}
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    padding: 20px;
+  }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restup</title>
+    <script src="assets/js/welcome/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Link -->
+    <link rel="stylesheet" href="./assets/css/welcome/index.css"/>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div></div>
+
+<!-- Nav -->
+<nav class="nav">
+    <div class="split-left">
+        <h1>RestUp</h1>
+        <div class="menu">
+            <a href="#" class="menu-link active">Home</a>
+            <a href="templates/bmi&exercise.html" class="menu-link">BMI&Exercise</a>
+         </div>
+    </div>
+
+    <div class="split-right">
+        <img src="assets/media/img_avatar.png" alt="Avatar">
+    </div>
+</nav>
+
+<!-- Main -->
+<main>
+    <section class="wrapper-inner">
+        <div class="left-pane">
+            <h1>Welcome</h1>
+            <p> Want to know whether you are at risk of a heart attack? With RestUp, you will be able to find out whether you are at risk!
+                But if you are don't worry it's never too late to change into a healthier lifestyle! Head over to our "Exercise" section and there we recommend
+                a few exercises you could do that are nice and easy.</p>
+        </div>
+        <div class="right-pane">
+            <form>
+                <div>
+                    <label class = "input-label" for="age">Age:</label>
+                    <input class = "input" type="text" id="age" name="age" onblur="setAge()"><br><br>
+                </div>
+
+                <div>
+                    <label class = "input-label" for="trestbps">Resting blood pressure:</label>
+                    <input class = "input" type="radio" id="trestbps" name="trestbps" onblur="setTrestbps()"><br><br>
+                    
+                </div>
+
+                <div>
+                    <label class = "input-label"  for="chol">Cholestrol level:</label>
+                    <input class = "input" type="text" id="chol" name="chol" onblur="setChol()"><br><br>
+                </div>
+
+                <div>
+                    <label for="fbs">Fasting blood sugar level</label>
+                    <input type="radio" id="fbs" name="fbs" value="1" onclick="setFbs()">
+                    <label for="Y">Yes</label>
+                    <input type="radio" id="fbs" name="fbs" value="0" onclick="setFbs()">
+                    <label for="N">No</label> <br></br>
+                </div>
+
+                <div>
+                    <label class = "input-label"  for="thalach">Max heart rate:</label>
+                    <input class = "input" type="text" id="thalach" name="thalach" onblur="setThalach()"><br><br>
+                </div>
+
+                <div>
+                    <label for="sex">Sex:</label>
+                    <input type="radio" id="f" name="sex" value="0" onclick="setSex()">
+                    <label for="F">F</label>
+                    <input type="radio" id="m" name="sex" value="1" onclick="setSex()">
+                    <label for="M">M</label><br><br>
+                </div>
+
+                <div>
+                    <label for="exang">Exercise induced anigma:</label>
+                    <input type="radio" id="yes" name="exang" value="0" onclick="setExang()">
+                    <label for="yes">yes</label>
+                    <input type="radio" id="no" name="exang" value="1" onclick="setExang()">
+                    <label for="no">no</label><br><br>
+                </div>
+                <button onclick="predict()">Predict</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer></footer>
+</body>
+
+</html>
