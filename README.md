@@ -21,3 +21,4 @@ That we were able to make this together as a team. It is not always easy to make
 We learned how to integrate different platforms like twilio, github, into making our work more efficient. Our team members varied from beginners to advanced so even the basic usage of html and css was something some on our teammates learned. 
 
 ## What's next for RestUp
+We are planning to implement a google maps and a calling system. The google maps system will show the closest hospitals and clinics around the users and the calling system will show you a list of contacts ranging from the emergency hotline to a doctor near the user.
